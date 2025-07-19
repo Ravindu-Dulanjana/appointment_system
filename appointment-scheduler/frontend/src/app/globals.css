@@ -24,3 +24,33 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Fix input field text visibility */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+  color: #374151 !important; /* Dark gray text */
+  background-color: #ffffff !important; /* White background */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus,
+select:focus {
+  color: #374151 !important; /* Dark gray text on focus */
+  background-color: #ffffff !important; /* White background on focus */
+}
+
+/* Placeholder text visibility */
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important; /* Light gray placeholder */
+  opacity: 1 !important;
+}
